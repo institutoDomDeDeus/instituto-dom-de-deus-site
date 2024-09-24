@@ -133,7 +133,7 @@ h1, h3, h5 {
 }
 
 .carousel-footer {
-color: var(--ddd-white);
+    color: var(--ddd-white);
 }
 
 
@@ -230,9 +230,6 @@ color: var(--ddd-white);
   .text-primary {
     color: #0E0B86 !important;
   }
-  
-
-  
   
 /*configuracoes do footer*/
 .global-footer {
@@ -420,6 +417,10 @@ color: var(--ddd-white);
         left: 50px;
         top: 5px;
         margin: 0;
+    }
+
+    .main-nav ul {
+        height: 300px;
     }
 
     .carousel-container {
