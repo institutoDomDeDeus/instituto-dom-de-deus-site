@@ -137,15 +137,16 @@ h1, h3, h5 {
 }
   
 .carousel-inner img {
-width: 800px;
-height: 600px;
-object-fit: cover;
-margin: 0 auto; /* Centraliza as imagens */
+    width: 800px;
+    height: 700px;
+    object-fit: contain;
+    margin: 0 auto; /* Centraliza as imagens */
 }
 
 .carousel-footer {
 color: var(--ddd-white);
 }
+
 
 .carousel-image {
     width: 800px;
