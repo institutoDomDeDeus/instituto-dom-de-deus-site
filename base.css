@@ -12,6 +12,7 @@ html {
     height: 100%;
     position: absolute;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* Aplica a fonte base a todos os elementos de texto */
@@ -72,21 +73,9 @@ h1, h3, h5 {
     text-align: center;
 }
 
-/*
-.social-shares.header p {
-    color: var(--ddd-main-blue);
-    margin-bottom: 0;
-}
-*/
 .global-header .logo {
     margin-right: 40px;
 }
-/*
-.global-header .logo img {
-    max-height: 200px;
-    max-width: 180px;
-}
-*/
 
 .global-header .social-shares {
     margin-left: 40px;
@@ -190,9 +179,61 @@ color: var(--ddd-white);
 
 .hyperlink {
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+.programas-projetos-apoio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*BOTAO FLUTUANTE*/
+/* Estilo do container que engloba o texto e o botão */
+#backToTopContainer {
+    display: none; /* Esconde o botão inicialmente */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    text-align: center;
+    transition: opacity 0.3s;
+  }
+  
+  /* Estilo do texto "Voltar para o topo" */
+  #backToTopText {
+    margin-bottom: 10px;
+    color: #0E0B86;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Estilo do botão flutuante */
+  #btnTop {
+    border: none;
+    outline: none;
+    background-color: #0E0B86; /* Cor de fundo */
+    color: white; /* Cor do ícone */
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 0 5px 5px #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  /* Efeito de hover no botão */
+  #btnTop:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+  }
+
+  .text-primary {
+    color: #0E0B86 !important;
+  }
+  
+
+  
+  
 /*configuracoes do footer*/
 .global-footer {
     position: relative;
@@ -232,16 +273,7 @@ color: var(--ddd-white);
     gap: 10px;
     align-items: center;
 }
-/*
-.global-footer .social-shares.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-left: 80px;
-}
-*/
+
 .global-footer .social-shares {
     position: relative;
     left: 40px;
@@ -389,11 +421,7 @@ color: var(--ddd-white);
         top: 5px;
         margin: 0;
     }
-/*
-    .follow-us {
-        display: none;
-    }
-*/
+
     .carousel-container {
         display: none;
     }
